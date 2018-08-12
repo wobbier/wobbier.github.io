@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Mitch Andrews | Game Developer</title>
+  <meta name="description" content="The home of Mitch Andrews!">
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/css/theme.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .block {
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+    body {
+      background: url(https://i.imgur.com/HNGWg2p.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div id="logo">
+        <a href="/">
+          <img src="/img/wobbier-logo.png" alt="wobbier logo" />
+        </a>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <section id="content">
+      <div id="gameTitle" style="text-align:center;">
+        <img src="https://i.imgur.com/ktBwCRn.png" />
+      </div>
+      <div id="player" style="text-align: center; margin: auto">
+      </div>
+      <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '540',
+            width: '960',
+            videoId: 'DsvEJKTwelc'
+          });
+        }
+      </script>
+      <div class="tags">
+        <a href="https://itunes.apple.com/ca/app/disney-magic-kingdoms/id731592936?mt&#x3D;8" class="apple">
+          <div class="block top left"></div>
+          <div class="block bottom left"></div>
+          <div class="block top right"></div>
+          <div class="block bottom right"></div>
+          <img src="/img/apple.png" style="display:inline;" />App Store</a>
+                <a href="https://play.google.com/store/apps/details?id&#x3D;com.gameloft.android.ANMP.GloftDYHM&amp;hl&#x3D;en" class="android">
+          <div class="block top left"></div>
+          <div class="block bottom left"></div>
+          <div class="block top right"></div>
+          <div class="block bottom right"></div>
+          <img src="/img/android.png" style="display:inline;" />Google Play</a>
+                <a href="https://www.microsoft.com/en-ca/store/p/disney-magic-kingdoms/9nblggh6bng3" class="windows">
+          <div class="block top left"></div>
+          <div class="block bottom left"></div>
+          <div class="block top right"></div>
+          <div class="block bottom right"></div>
+          <img src="/img/windows.png" style="display:inline;" />Windows Store</a>
+                 <div class="clearfix"></div>
+      </div>
+
+      <div class="description">
+        <div class="block top left"></div>
+        <div class="block bottom left"></div>
+        <div class="block top right"></div>
+        <div class="block bottom right"></div>
+        <p>WELCOME TO THE MOST MAGICAL PLACE ON MOBILE!<br /><br />When Maleficent casts an evil spell on the Kingdom, ridding it of all of its powerful magic, can you help bring it all back? Relive the thrill of Disney Parks and create the most fantastical Park of your dreams in Disney Magic Kingdoms!<br /><br />I worked on various aspects of Disney Magic Kingdoms for mobile.<br />\u2022 Worked with artists to help integrate animations and cutscenes into the game<br />\u2022 Implemented the tracking system code used for creating a detailed overview of the user\u2019s behavior and created tools to make our tracking code data-driven<br />\u2022 Created tools for designers to help increase productivity when creating quests for the game<br />\u2022 Worked on the online event system to extend the flexibility for time sensitive tasks for users playing the game</p>
+
+      </div>
+    </section>
+    <footer>
+      &copy; 2018 Mitch Andrews
+    </footer>
+  </div>
+</body>
+
+</html>
