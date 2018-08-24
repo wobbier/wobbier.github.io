@@ -2,131 +2,130 @@
 <html lang="en">
 
 <head>
-  <title>Goatie 3D</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <link rel="stylesheet" href="/css/style.css">
+	<title>Goatie 3D</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="/css/style.css">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=460">
+	<meta charset="UTF-8">
 
-  <style>
-    .tags {
-      display: none;
-    }
-    
-    .videoWrapper {
-      position: relative;
-      width: 100%;
-      /* 16:9 */
-      padding-bottom: 56.25%;
-    }
-    
-    .videoWrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    
-    .description {
-      font-size: 1.1em;
-      line-height: 1.45;
-      margin-top: 20px;
-    }
-    
-    .game-title {
-      width: 100%;
-      font-size: 1.1em;
-      font-weight: bold;
-      line-height: 1.45;
-    }
-    
-    .game-title h1 {
-      font-weight: bold;
-      font-size: 1.15em;
-      float: left
-    }
-    
-    .game-title h2 {
-      float: right;
-    }
-    
-    .content hr {
-      height: 2px;
-      background-color: #ed174b;
-      width: 100%;
-      border: none;
-      margin: 0;
-    }
-  </style>
+	<style>
+		.tags {
+			display: none;
+		}
+
+		.videoWrapper {
+			position: relative;
+			width: 100%;
+			/* 16:9 */
+			padding-bottom: 56.25%;
+		}
+
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.description {
+			font-size: 1.1em;
+			line-height: 1.45;
+			margin-top: 20px;
+		}
+
+		.game-title {
+			width: 100%;
+			font-size: 1.1em;
+			font-weight: bold;
+			line-height: 1.45;
+		}
+
+		.game-title h1 {
+			font-weight: bold;
+			font-size: 1.15em;
+			float: left
+		}
+
+		.game-title h2 {
+			float: right;
+		}
+
+		.content hr {
+			height: 2px;
+			background-color: #ed174b;
+			width: 100%;
+			border: none;
+			margin: 0;
+		}
+	</style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1>
-        <a href="https://github.com/wobbier" rel="external" target="_blank">GITHUB</a>
-      </h1>
-      <h1>
-        <a href="https://linkedin.com/in/mitchellandrews" rel="external" target="_blank">LINKEDIN</a>
-      </h1>
-      <h1>
-        <a href="https://twitter.com/wobbier" rel="external" target="_blank">TWITTER</a>
-      </h1>
-      <h1>
-        <a href="mailto:mitchdandrews@gmail.com">EMAIL</a>
-      </h1>
-      <h1>
-        <a href="/about">ABOUT</a>
-      </h1>
-      <h1 class="title">
-        <a href="/">MITCH ANDREWS</a>
-      </h1>
-    </nav>
-  </header>
-  <div class="content">
-    <div class="videoWrapper">
-      <div id="player" style="text-align: center; margin: auto">
-      </div>
-    </div>
-    <script>
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
+	<header>
+		<nav>
+			<h1 class="title">
+				<a href="/">MITCH ANDREWS</a>
+			</h1>
+			<h2>
+				<a href="https://twitter.com/wobbier" rel="external" target="_blank">TWITTER</a>
+			</h2>
+			<h2>
+				<a href="https://linkedin.com/in/mitchellandrews" rel="external" target="_blank">LINKEDIN</a>
+			</h2>
+			<h2>
+				<a href="mailto:mitchdandrews@gmail.com">EMAIL</a>
+			</h2>
+			<h2>
+				<a href="https://github.com/wobbier" rel="external" target="_blank">GITHUB</a>
+			</h2>
+			<h2>
+				<a href="/about">ABOUT</a>
+			</h2>
+		</nav>
+	</header>
+	<div class="content">
 
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		<div class="videoWrapper">
+			<div id="player" style="text-align: center; margin: auto">
+			</div>
+		</div>
+		<script>
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			var player;
 
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '349',
-          width: '560',
-          videoId: 'n7i_AMazYZ0'
-        });
-      }
-    </script>
-    <div class="padded-wrapper">
-      <div class="game-title">
-        <h1>Goatie 3D</h1>
-        <h2>May 07, 2016</h2>
-        <div class="clearfix"></div>
-      </div>
-      <hr />
-      <div class="tags">
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
-      </div>
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player('player', {
+					height: '349',
+					width: '560',
+					videoId: 'n7i_AMazYZ0'
+				});
+			}
+		</script>
+		<div class="padded-wrapper">
+			<div class="game-title">
+				<h1>Goatie 3D</h1>
+				<h2>May 07, 2016</h2>
+				<div class="clearfix"></div>
+			</div>
+			<hr />
+			<div class="tags">
+				<div class="clearfix"></div>
+				<div class="clearfix"></div>
+			</div>
 
-      <div class="description">
-        <p>A spiritual successor to the cult hit Goatie Jr. This year&#39;s T.O. Jam goal was to take goatie to the next level.</p>
+			<div class="description">
+				<p>A spiritual successor to the cult hit Goatie Jr. This year&#39;s T.O. Jam goal was to take goatie to the next level.</p>
 
-      </div>
-    </div>
-  </div>
-  <footer>
-    &copy;2018 Mitch Andrews
-  </footer>
+			</div>
+		</div>
+	</div>
+	<footer>
+		&copy;2018 Mitch Andrews
+	</footer>
 </body>
 
 </html>

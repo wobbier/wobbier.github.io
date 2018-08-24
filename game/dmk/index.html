@@ -2,143 +2,143 @@
 <html lang="en">
 
 <head>
-  <title>Disney Magic Kingdoms - Gameloft</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <link rel="stylesheet" href="/css/style.css">
+	<title>Disney Magic Kingdoms - Gameloft</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="/css/style.css">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=460">
+	<meta charset="UTF-8">
 
-  <style>
-    .tags {
-      display: none;
-    }
-    
-    .videoWrapper {
-      position: relative;
-      width: 100%;
-      /* 16:9 */
-      padding-bottom: 56.25%;
-    }
-    
-    .videoWrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    
-    .description {
-      font-size: 1.1em;
-      line-height: 1.45;
-      margin-top: 20px;
-    }
-    
-    .game-title {
-      width: 100%;
-      font-size: 1.1em;
-      font-weight: bold;
-      line-height: 1.45;
-    }
-    
-    .game-title h1 {
-      font-weight: bold;
-      font-size: 1.15em;
-      float: left
-    }
-    
-    .game-title h2 {
-      float: right;
-    }
-    
-    .content hr {
-      height: 2px;
-      background-color: #ed174b;
-      width: 100%;
-      border: none;
-      margin: 0;
-    }
-  </style>
+	<style>
+		.tags {
+			display: none;
+		}
+
+		.videoWrapper {
+			position: relative;
+			width: 100%;
+			/* 16:9 */
+			padding-bottom: 56.25%;
+		}
+
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.description {
+			font-size: 1.1em;
+			line-height: 1.45;
+			margin-top: 20px;
+		}
+
+		.game-title {
+			width: 100%;
+			font-size: 1.1em;
+			font-weight: bold;
+			line-height: 1.45;
+		}
+
+		.game-title h1 {
+			font-weight: bold;
+			font-size: 1.15em;
+			float: left
+		}
+
+		.game-title h2 {
+			float: right;
+		}
+
+		.content hr {
+			height: 2px;
+			background-color: #ed174b;
+			width: 100%;
+			border: none;
+			margin: 0;
+		}
+	</style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1>
-        <a href="https://github.com/wobbier" rel="external" target="_blank">GITHUB</a>
-      </h1>
-      <h1>
-        <a href="https://linkedin.com/in/mitchellandrews" rel="external" target="_blank">LINKEDIN</a>
-      </h1>
-      <h1>
-        <a href="https://twitter.com/wobbier" rel="external" target="_blank">TWITTER</a>
-      </h1>
-      <h1>
-        <a href="mailto:mitchdandrews@gmail.com">EMAIL</a>
-      </h1>
-      <h1>
-        <a href="/about">ABOUT</a>
-      </h1>
-      <h1 class="title">
-        <a href="/">MITCH ANDREWS</a>
-      </h1>
-    </nav>
-  </header>
-  <div class="content">
-    <div class="videoWrapper">
-      <div id="player" style="text-align: center; margin: auto">
-      </div>
-    </div>
-    <script>
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
+	<header>
+		<nav>
+			<h1 class="title">
+				<a href="/">MITCH ANDREWS</a>
+			</h1>
+			<h2>
+				<a href="https://twitter.com/wobbier" rel="external" target="_blank">TWITTER</a>
+			</h2>
+			<h2>
+				<a href="https://linkedin.com/in/mitchellandrews" rel="external" target="_blank">LINKEDIN</a>
+			</h2>
+			<h2>
+				<a href="mailto:mitchdandrews@gmail.com">EMAIL</a>
+			</h2>
+			<h2>
+				<a href="https://github.com/wobbier" rel="external" target="_blank">GITHUB</a>
+			</h2>
+			<h2>
+				<a href="/about">ABOUT</a>
+			</h2>
+		</nav>
+	</header>
+	<div class="content">
 
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		<div class="videoWrapper">
+			<div id="player" style="text-align: center; margin: auto">
+			</div>
+		</div>
+		<script>
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			var player;
 
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '349',
-          width: '560',
-          videoId: 'DsvEJKTwelc'
-        });
-      }
-    </script>
-    <div class="padded-wrapper">
-      <div class="game-title">
-        <h1>Disney Magic Kingdoms - Gameloft</h1>
-        <h2>March 18, 2016</h2>
-        <div class="clearfix"></div>
-      </div>
-      <hr />
-      <div class="tags">
-        <a href="https://itunes.apple.com/ca/app/disney-magic-kingdoms/id731592936?mt&#x3D;8" class="apple">
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player('player', {
+					height: '349',
+					width: '560',
+					videoId: 'DsvEJKTwelc'
+				});
+			}
+		</script>
+		<div class="padded-wrapper">
+			<div class="game-title">
+				<h1>Disney Magic Kingdoms - Gameloft</h1>
+				<h2>March 18, 2016</h2>
+				<div class="clearfix"></div>
+			</div>
+			<hr />
+			<div class="tags">
+				<a href="https://itunes.apple.com/ca/app/disney-magic-kingdoms/id731592936?mt&#x3D;8" class="apple">
           <img src="/img/apple.png" style="display:inline;" />App Store</a>
-        <a href="https://play.google.com/store/apps/details?id&#x3D;com.gameloft.android.ANMP.GloftDYHM&amp;hl&#x3D;en" class="android">
+				<a href="https://play.google.com/store/apps/details?id&#x3D;com.gameloft.android.ANMP.GloftDYHM&amp;hl&#x3D;en" class="android">
           <img src="/img/android.png" style="display:inline;" />Google Play</a>
-        <a href="https://www.microsoft.com/en-ca/store/p/disney-magic-kingdoms/9nblggh6bng3" class="windows">
+				<a href="https://www.microsoft.com/en-ca/store/p/disney-magic-kingdoms/9nblggh6bng3" class="windows">
           <img src="/img/windows.png" style="display:inline;" />Windows Store</a>
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
-      </div>
+				<div class="clearfix"></div>
+				<div class="clearfix"></div>
+			</div>
 
-      <div class="description">
-        <p>When Maleficent casts an evil spell on the Kingdom, ridding it of all of its powerful magic, can you help bring it all back? Relive the thrill of Disney Parks and create the most fantastical Park of your dreams in Disney Magic Kingdoms!<br /><br />
-I worked on various aspects of Disney Magic Kingdoms for mobile.<br /></p>
-<ul class="bullet-list">
-<li>Worked with artists to help integrate animations and cutscenes into the game</li>
-<li>Implemented the tracking system code used for creating a detailed overview of the user&#39;s behavior and created tools to make our tracking code data-driven</li>
-<li>Created tools for designers to help increase productivity when creating quests for the game</li>
-<li>Worked on the online event system to extend the flexibility for time sensitive tasks for users playing the game</li>
-</ul>
-      </div>
-    </div>
-  </div>
-  <footer>
-    &copy;2018 Mitch Andrews
-  </footer>
+			<div class="description">
+				<p>When Maleficent casts an evil spell on the Kingdom, ridding it of all of its powerful magic, can you help bring it all back? Relive the thrill of Disney Parks
+					and create the most fantastical Park of your dreams in Disney Magic Kingdoms!<br /><br /> I worked on various aspects of Disney Magic Kingdoms for mobile.<br
+					/></p>
+				<ul class="bullet-list">
+					<li>Worked with artists to help integrate animations and cutscenes into the game</li>
+					<li>Implemented the tracking system code used for creating a detailed overview of the user&#39;s behavior and created tools to make our tracking code data-driven</li>
+					<li>Created tools for designers to help increase productivity when creating quests for the game</li>
+					<li>Worked on the online event system to extend the flexibility for time sensitive tasks for users playing the game</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		&copy;2018 Mitch Andrews
+	</footer>
 </body>
 
 </html>
