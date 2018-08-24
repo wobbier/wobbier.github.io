@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=460">
+	<meta name="viewport" content="width=560">
 
 	<style>
 		.tags {
@@ -19,6 +19,10 @@
 			width: 100%;
 			/* 16:9 */
 			padding-bottom: 56.25%;
+		}
+
+		.videoWrapper.iPhoneX {
+			padding-bottom: 46.25%;
 		}
 
 		.videoWrapper iframe {
@@ -44,12 +48,24 @@
 
 		.game-title h1 {
 			font-weight: bold;
-			font-size: 1.15em;
+			font-size: 1.3em;
 			float: left
 		}
 
 		.game-title h2 {
 			float: right;
+		}
+
+		.section-title {
+			width: 100%;
+			line-height: 1.45;
+			margin-bottom: 15px;
+		}
+
+		.section-title h1 {
+			font-weight: bold;
+			font-size: 1.15em;
+			float: left
 		}
 
 		.content hr {
@@ -102,7 +118,7 @@
 				player = new YT.Player('player', {
 					height: '349',
 					width: '560',
-					videoId: 'DsvEJKTwelc'
+					videoId: 'zEIor5XQT-o'
 				});
 			}
 		</script>
@@ -125,15 +141,74 @@
 			</div>
 
 			<div class="description">
+				<!--  DsvEJKTwelc -->
 				<p>When Maleficent casts an evil spell on the Kingdom, ridding it of all of its powerful magic, can you help bring it all back? Relive the thrill of Disney Parks
-					and create the most fantastical Park of your dreams in Disney Magic Kingdoms!<br /><br /> I worked on various aspects of Disney Magic Kingdoms for mobile.<br
-					/></p>
-				<ul class="bullet-list">
-					<li>Worked with artists to help integrate animations and cutscenes into the game</li>
-					<li>Implemented the tracking system code used for creating a detailed overview of the user&#39;s behavior and created tools to make our tracking code data-driven</li>
-					<li>Created tools for designers to help increase productivity when creating quests for the game</li>
-					<li>Worked on the online event system to extend the flexibility for time sensitive tasks for users playing the game</li>
-				</ul>
+					and create the most fantastical Park of your dreams in Disney Magic Kingdoms!<br /><br />
+					<div class="section-title">
+						<h1>Things I&#39;ve worked on</h1>
+						<div class="clearfix"></div>
+						<hr />
+					</div>
+				</p>
+				<p>
+					<ul class="bullet-list">
+				</p>
+				<p>
+					<li>
+						<div>Worked with artists to help integrate animations and cutscenes into the game</div>
+					</li>
+				</p>
+				<p>
+					<li>
+						<div>Implemented <a href="#MerlinsGatheringSpell">Merlin&#39;s Gathering Spell</a> which collects all resources from your park</div>
+					</li>
+				</p>
+				<p>
+					<li>
+						<div>Implemented the <a href="#BCF">Busy Character Finder</a> UI feature which shows all active activites in the kindom</div>
+					</li>
+				</p>
+				<p>
+					<li>
+						<div>Improved FPS by 46% through modifying the way we update objects off screen.</div>
+					</li>
+				</p>
+				<p>
+					<li>
+						<div>Created a spline based camera bounds system for artists to tweak camera bounds when we add more land XD</div>
+					</li>
+				</p>
+				<p>
+					<li>
+						<div>Implemented each boss battle up until Update 23: The Little Mermaid</div>
+					</li>
+				</p>
+				<p>
+					<li>
+						<div>Worked on the online event system to extend the flexibility for time sensitive tasks for users playing the game</div>
+					</li>
+					</ul>
+				</p>
+				<div id="BCF" class="section">
+					<div class="section-title">
+						<h1>The Busy Character Finder</h1>
+						<div class="clearfix"></div>
+						<hr />
+					</div>
+					<div class="videoWrapper iPhoneX">
+						<iframe src="https://player.vimeo.com/video/286466362" width="100%" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+				<div id="MerlinsGatheringSpell" class="section">
+					<div class="section-title">
+						<h1>Merlin&#39;s Gathering Spell</h1>
+						<div class="clearfix"></div>
+						<hr />
+					</div>
+					<div class="videoWrapper iPhoneX">
+						<iframe src="https://player.vimeo.com/video/286463386" width="100%" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
