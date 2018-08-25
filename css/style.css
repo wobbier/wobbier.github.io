@@ -239,6 +239,7 @@ nav h1 {
         max-width: 100%;
     }
     .title {
+        float: right;
         display: block;
     }
     header nav {
