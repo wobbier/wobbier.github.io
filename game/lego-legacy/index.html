@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Statistically Improbable</title>
+	<title>LEGO Legacy: Heroes Unboxed</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<link rel="stylesheet" href="/css/style.css">
 
@@ -114,11 +114,29 @@
 		</nav>
 	</header>
 	<div class="content">
-		<img src="/img/rather-wasted.gif" style="margin: 0 auto;" />
+		<div class="videoWrapper">
+			<div id="player" style="text-align: center; margin: auto">
+			</div>
+		</div>
+		<script>
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			var player;
+
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player('player', {
+					height: '349',
+					width: '560',
+					videoId: 'TygVI70AE9Y'
+				});
+			}
+		</script>
 		<div class="padded-wrapper">
 			<div class="game-title">
-				<h1>Statistically Improbable</h1>
-				<h2>May 07, 2016</h2>
+				<h1>LEGO Legacy: Heroes Unboxed</h1>
+				<h2>Fall 2019</h2>
 				<div class="clearfix"></div>
 			</div>
 			<hr />
@@ -129,12 +147,7 @@
 		</div>
 
 		<div class="description">
-			<div class="padded-wrapper">
-				Statistically vending machines kill more often than sharks. Time to disprove it. Smash or Gobble more yellow dudes than your friend and prove
-				who the best killer is!<br><br>
-				Two controllers required.<br><br>
-				<a href="https://wobbier.itch.io/statistically-improbable">Play it here.</a>
-			</div>
+
 		</div>
 	</div>
 	<footer>
