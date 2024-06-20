@@ -54,6 +54,16 @@
 		<h1><img src="/img/games.png" alt="Games" /></h1>
 	</div>
 	<div class="content game-list">
+		<a href="/game/wz" class="game-link">
+			<div class="game-background" style="background-image: url('img/wz.png');">
+			</div>
+			<div class="game-info">
+				<p>Party up and leave no friend behind.</p>
+			</div>
+			<div class="project-title">
+				<h1>Call of Duty: Warzone</h1>
+			</div>
+		</a>
 		<a href="/game/mw3" class="game-link">
 			<div class="game-background" style="background-image: url('img/MWIII.jpg');">
 			</div>
@@ -169,8 +179,13 @@
 		window.onload = function() {
 			var element = document.getElementById('mega-game');
 			if (element) {
-				if (Math.random() >= 0.5) {
+				var rnd = Math.random();
+				if (rnd <= 0.25) {
 					element.style.backgroundImage = 'url("/img/mw3-cover.png")';
+				} else if (rnd <= 0.5) {
+					element.style.backgroundImage = 'url("/img/mw2-home.jpg")';
+				} else if (rnd <= 0.75) {
+					element.style.backgroundImage = 'url("/img/wz-cover.jpg")';
 				} else {
 					element.style.backgroundImage = 'url("/img/mw3-cover-2.png")';
 				}
