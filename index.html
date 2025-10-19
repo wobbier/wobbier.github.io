@@ -54,6 +54,16 @@
 		<h1><img src="/img/games.png" alt="Games" /></h1>
 	</div>
 	<div class="content game-list">
+		<a href="/game/bo7" class="game-link">
+			<div class="game-background" style="background-image: url('img/bo7.png');">
+			</div>
+			<div class="game-info">
+				<p>Embrace the madness Call of Duty: Black Ops 7</p>
+			</div>
+			<div class="project-title">
+				<h1>Call of Duty: Black Ops 7</h1>
+			</div>
+		</a>
 		<a href="/game/wz" class="game-link">
 			<div class="game-background" style="background-image: url('img/wz.png');">
 			</div>
@@ -183,22 +193,27 @@
 		</a>
 	</div>
 	<footer>
-		&copy;2024 Mitch Andrews
+		&copy;2025 Mitch Andrews
 	</footer>
 	<script>
 		window.onload = function() {
 			var element = document.getElementById('mega-game');
 			if (element) {
-				var rnd = Math.random();
-				if (rnd <= 0.25) {
-					element.style.backgroundImage = 'url("/img/mw3-cover.png")';
-				} else if (rnd <= 0.5) {
-					element.style.backgroundImage = 'url("/img/ll.png")';
-				} else if (rnd <= 0.75) {
-					element.style.backgroundImage = 'url("/img/wz-cover.jpg")';
-				} else {
-					element.style.backgroundImage = 'url("/img/mw3-cover-2.png")';
-				}
+				var images = [
+					'url("/img/mw3-cover.png")',
+					'url("/img/ll.png")',
+					//'url("/img/mw2-home.jpg")',
+					//'url("/img/cod-cover.jpg")',
+					'url("/img/bo7.png")',
+					//'url("/img/wz-cover-2.jpg")',
+					//'url("/img/wz-cover-3.jpg")',
+					'url("/img/bo6-cover.jpg")',
+					//'url("/img/wz-cover.jpg")',
+					'url("/img/mw3-cover-2.png")',
+					'url("/img/watch-dogs-legion.jpg")'
+				];
+				var randomIndex = Math.floor(Math.random() * images.length);
+				element.style.backgroundImage = images[randomIndex];
 			}
 		};
 	</script>
