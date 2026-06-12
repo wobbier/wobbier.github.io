@@ -414,14 +414,22 @@ nav h1 {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+    margin: unset;
   }
   header {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    position: unset;
   }
   .title {
     display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 0px;
   }
   header nav {
     -ms-flex: 100%;
@@ -432,14 +440,6 @@ nav h1 {
   .game-background {
     height: 250px;
   }
-}
-@media screen and (max-width: 1200px) {
-  .title {
-    width: 100%;
-    text-align: center;
-    padding-left: 0px;
-    margin-top: 0px;
-  }
   .links {
     text-align: center;
   }
@@ -448,16 +448,8 @@ nav h1 {
     float: none;
     padding: 40px 20px 20px 20px;
   }
-  header {
-    height: auto;
-    padding-bottom: 20px;
-    position: unset;
-  }
   .header-black {
     position: unset !important;
-  }
-  .content {
-    margin: unset;
   }
 }
 
