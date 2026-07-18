@@ -1,0 +1,1181 @@
+@import url("//fonts.googleapis.com/css?family=Poppins");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.accent {
+  color: #ed174b !important;
+}
+
+body {
+  background: #fefefe;
+  color: #333333;
+  font-family: "Poppins";
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  /*position: absolute !important; // this is for headers that need a fade on em */
+  top: 0;
+  background-color: #fefefe;
+  z-index: 1;
+  position: absolute;
+}
+.title {
+  padding: 28px 0 20px 40px;
+  float: left;
+  margin-right: 40px;
+}
+.title a {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blurred-bg {
+  background-image: url("/img/mw22.jpg");
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-size: cover;
+}
+header h2 {
+  padding: 40px 40px 0 0;
+  font-size: 22px;
+  font-weight: 800;
+  float: right;
+  letter-spacing: 3px;
+}
+
+header h2 a {
+  text-decoration: none;
+  color: #333333;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #ed174b;
+}
+
+nav {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+nav h1 {
+  float: left;
+}
+
+.content {
+  width: 1280px;
+  margin: 100px auto 0 auto;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.content a {
+  color: black;
+  text-decoration: none;
+}
+
+.game-list {
+  margin-top: 50px !important;
+}
+
+.row {
+  /*padding: 0 4px;*/
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  /*padding: 0 4px;*/
+}
+
+.column.divider {
+  -ms-flex: 1%; /* IE10 */
+  flex: 1%;
+  max-width: 1%;
+}
+
+.column img {
+  vertical-align: middle;
+}
+
+.selfie {
+  float: left;
+  margin: 0 25px;
+  border-radius: 550px;
+  overflow: hidden;
+}
+
+.selfie img {
+  width: 200px;
+  display: block;
+}
+
+.game-link {
+  position: relative;
+  display: block;
+  -ms-flex: 44%; /* IE10 */
+  flex: 44%;
+  max-width: 44%;
+  margin-left: 4%;
+  overflow: hidden;
+}
+
+.favorite-game-link {
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 460px !important;
+  height: 215px !important;
+  margin: 10px 45px;
+  max-width: none;
+}
+
+.favorite-game-link .game-background {
+  height: 215px;
+  width: 460px;
+  background-position: center;
+  background-size: cover;
+}
+
+.game-link:hover .game-info {
+  display: block;
+}
+
+.game-link:hover .game-background {
+  -webkit-filter: blur(5px); /* Safari */
+  filter: blur(5px);
+}
+
+.game-link:hover .project-title {
+  text-decoration: underline;
+}
+
+.game-link .game-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000b3;
+  display: none;
+}
+
+.favorite-game-link .game-info {
+  height: inherit !important;
+}
+
+.game-info {
+  height: 320px;
+}
+
+.game-background {
+  height: 320px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.game-info p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fefefe;
+  text-align: center;
+  width: 80%;
+  line-height: 1.45;
+}
+
+.mega-game {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  /*position: relative; cod update*/
+  top: 0;
+  min-height: 100%;
+}
+
+.main-nav-white {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: #0a020133 !important /* #fefefe default */;
+  /*background: rgba(0, 0, 0, 0.2);*/
+}
+.main-nav-white nav h2 a,
+.main-nav-white nav h1 a {
+  color: white !important;
+}
+
+.project-title {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.padded-wrapper {
+  padding: 20px 40px 10px;
+  width: 100%;
+}
+
+.description a {
+  color: #ed174b;
+}
+.description a:hover {
+  text-decoration: underline;
+}
+
+.content-title {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+.content-title h1 {
+  font-size: 35pt;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.downArrow {
+  animation: arrowBounce 4s infinite;
+  animation-timing-function: ease;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+  .content {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: unset;
+  }
+  header {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    position: unset;
+  }
+  .title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  header nav {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .game-info,
+  .game-background {
+    height: 250px;
+  }
+  .links {
+    text-align: center;
+  }
+  .links h2 {
+    display: inline;
+    float: none;
+    padding: 40px 20px 20px 20px;
+  }
+  .header-black {
+    position: unset !important;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 780px) {
+  .content {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 0px;
+    margin: unset;
+  }
+  .title {
+    float: left;
+    display: block;
+  }
+  .game-link {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 0px !important;
+  }
+  .main-nav-white nav h2 a {
+    font-size: 20px;
+  }
+  .title {
+    clear: both;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .title a {
+    font-size: 30px;
+    text-align: center;
+  }
+  header {
+    height: 150px;
+    display: block;
+  }
+
+  header h1 img {
+    height: 25px;
+  }
+
+  nav {
+    width: auto;
+  }
+  .game-info {
+    height: 250px;
+  }
+
+  .game-background {
+    height: 250px;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  .links {
+    text-align: center;
+  }
+  .links h2 {
+    display: inline;
+    float: none;
+    padding: 40px 10px 20px 10px;
+  }
+  header {
+    height: auto;
+    padding-bottom: 20px;
+    position: unset;
+  }
+}
+
+.bullet-list {
+}
+
+.bullet-list li {
+  color: #ed174b;
+  margin: 5px 0 5px 25px;
+  list-style-type: disclosure-closed;
+}
+
+.bullet-list li div {
+  color: #333333;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  font-family: "Poppins";
+}
+
+.section {
+  margin-top: 20px;
+}
+
+/* TAGS */
+
+.tags {
+  display: none;
+}
+
+.download {
+  float: left;
+}
+.download a {
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.download a .platform {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.download a .image {
+  height: 30px;
+  display: block;
+}
+
+.download a .image img {
+  height: inherit;
+}
+
+/* TAGS */
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  /* 16:9 */
+  padding-bottom: 56.25%;
+}
+
+.videoWrapper.iPhoneX {
+  padding-bottom: 46.25%;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.45;
+  width: 100%;
+}
+
+.game-title {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+.game-title h1 {
+  font-weight: bold;
+  font-size: 1.3em;
+  float: left;
+}
+
+.game-title h2 {
+  float: right;
+}
+
+.section-title {
+  width: 100%;
+  line-height: 1.45;
+  margin-bottom: 15px;
+}
+
+.section-title h1 {
+  font-weight: bold;
+  font-size: 1.15em;
+  float: left;
+}
+
+.content hr {
+  height: 2px;
+  background-color: #ed174b;
+  width: 100%;
+  border: none;
+  margin: 0;
+}
+
+/* BLOG */
+
+.blog-link {
+  display: block;
+  width: 100%;
+  padding: 25px 0 10px;
+}
+
+.blog-link p {
+  line-height: 1.45;
+  margin-top: 15px;
+}
+
+.blog-link:hover .game-title h1 {
+  color: #ed174b;
+  text-decoration: underline;
+}
+
+.blog-tags {
+  margin-top: 15px;
+}
+
+.blog-tag {
+  display: inline-block;
+  border: 1px solid #ed174b;
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin: 0 8px 8px 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.home-blog {
+  margin-top: 20px !important;
+}
+
+.home-blog .blog-link {
+  padding: 12px 0 0;
+}
+
+.all-posts-link {
+  margin-top: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.disclosure-banner {
+  width: 100%;
+  border: 3px solid;
+  border-radius: 8px;
+  text-align: center;
+  padding: 30px 20px 25px;
+  text-transform: uppercase;
+}
+
+.disclosure-banner h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.disclosure-days {
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.disclosure-label {
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.disclosure-banner p {
+  margin-top: 12px;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+}
+
+.disclosure-open {
+  border-color: #ed174b;
+  color: #ed174b;
+  background: rgba(237, 23, 75, 0.06);
+}
+
+.disclosure-fixed {
+  border-color: #27ae60;
+  color: #27ae60;
+  background: rgba(39, 174, 96, 0.06);
+}
+
+.disclosure-chip-open {
+  border-color: #ed174b;
+  color: #ed174b;
+}
+
+.disclosure-chip-fixed {
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+.proof-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 45px;
+  margin: 15px 0 30px;
+}
+
+.proof-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.proof-text {
+  flex: 1 1 320px;
+}
+
+.proof-text p + p {
+  margin-top: 15px;
+}
+
+.proof-label {
+  color: #ed174b;
+  font-weight: bold;
+  font-size: 0.85em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.proof-image {
+  flex: 0 1 auto;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 1201px) {
+  .header-float {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fefefeee;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media screen and (min-width: 1201px) and (prefers-color-scheme: dark) {
+  .header-float {
+    background-color: #111111ee;
+  }
+}
+
+/* DEBUG */
+
+.debug-ribbon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  background: #ed174b;
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.debug-chip {
+  display: inline-block;
+  border: 1px dashed #ed174b;
+  color: #ed174b;
+  border-radius: 20px;
+  padding: 2px 12px;
+  margin-left: 10px;
+  font-size: 0.6em;
+  letter-spacing: 2px;
+  vertical-align: middle;
+}
+
+.draft-banner {
+  width: 100%;
+  border: 2px dashed #ed174b;
+  border-radius: 8px;
+  color: #ed174b;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.debug-hidden-card {
+  outline: 2px dashed #ed174b;
+  outline-offset: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #e0e0e0;
+  }
+
+  header {
+    background-color: #111;
+  }
+
+  header h2 a {
+    color: #e0e0e0;
+  }
+
+  .content a {
+    color: #e0e0e0;
+  }
+
+  .project-title {
+    color: #e0e0e0;
+  }
+
+  .bullet-list li div {
+    color: #e0e0e0;
+  }
+
+  .content-title img {
+    filter: invert(1);
+  }
+}
+
+/* ============================================================
+   BLOG ARTICLE  —  two-column editorial layout
+   Scoped to .blog-article (blog-post.html only) so none of these
+   rules leak into the home / about / blog-list / game pages.
+
+   Shell (max 1320) ─┬─ hero (centered, full width)
+                     └─ grid ─┬─ sticky rail (counter + TOC)
+                              └─ main reading column (~760 measure)
+   ============================================================ */
+
+/* Override the shared fixed-width flex .content with a wider block shell. */
+.blog-article {
+  width: auto;
+  max-width: 1320px;
+  margin: 130px auto 0;
+  padding: 0 40px;
+  display: block;
+}
+
+/* ---- Hero: full-width, centered, big responsive headline ---- */
+.article-hero {
+  max-width: 840px;
+  margin: 10px auto 52px;
+  text-align: center;
+}
+.article-kicker {
+  color: #ed174b;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.article-title {
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+}
+.article-tags {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---- Body grid: sticky rail + reading column ---- */
+.article-grid {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+/* ---- Rail: sticky, follows the reader down the page ---- */
+.article-rail {
+  position: sticky;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* Compact disclosure counter for the rail. */
+.rail-disclosure {
+  padding: 22px 16px 18px;
+  text-align: center;
+}
+.rail-disclosure .disclosure-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.rail-disclosure .disclosure-days {
+  font-size: 3.4rem;
+  font-weight: bold;
+  line-height: 1.05;
+  margin: 8px 0 2px;
+}
+.rail-disclosure .disclosure-label {
+  font-size: 0.68rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.rail-disclosure .disclosure-since {
+  margin-top: 12px;
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* Auto-generated "On this page" table of contents.
+   Reset the global `nav { width: 1180px; margin: 0 auto }` rule. */
+.rail-toc {
+  width: auto;
+  margin: 0;
+}
+.rail-heading {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 12px;
+}
+.toc-list a {
+  display: block;
+  padding: 7px 0 7px 16px;
+  border-left: 2px solid rgba(128, 128, 128, 0.25);
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  opacity: 0.65;
+  transition: opacity 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.toc-list a:hover {
+  opacity: 1;
+  border-left-color: #ed174b;
+}
+.toc-list a.active {
+  opacity: 1;
+  color: #ed174b;
+  border-left-color: #ed174b;
+  font-weight: 600;
+}
+
+/* ---- Reading column ---- */
+.article-main .description {
+  font-size: 1.12em;
+  line-height: 1.72;
+}
+/* Prose blocks: flush to the column (grid gap handles the gutter),
+   capped to a comfortable measure. Images break wider (below). */
+.article-main .padded-wrapper {
+  max-width: 760px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.article-main .description > .padded-wrapper:first-child {
+  font-size: 1.1em;
+}
+.article-main .section-title:first-child,
+.article-main .description > .padded-wrapper:first-child {
+  margin-top: 0;
+}
+
+/* Section headings. The scroll offset must live on the heading itself,
+   since that's the element toc.js gives the anchor id to — otherwise the
+   fixed header hides the title after a TOC jump. */
+.article-main .section-title {
+  margin-top: 56px;
+}
+.article-main .section-title h1,
+.article-main .section-title h2 {
+  float: none;
+  font-size: 1.7em;
+  line-height: 1.2;
+  font-weight: bold;
+  scroll-margin-top: 120px;
+}
+.article-main .section-title hr {
+  margin-top: 12px;
+}
+
+/* Screenshots align to the same measure as the prose, flush-left, so
+   nothing bleeds past the text edge. */
+.article-main .description > img {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  margin: 40px 0;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+/* Proof rows keep side-by-side within the same 760 measure. */
+.article-main .proof-row {
+  max-width: 760px;
+  gap: 32px;
+}
+.article-main .proof-image {
+  max-width: 340px;
+}
+
+/* Links read as clickable (underline), distinct from .accent emphasis. */
+.article-main .description a {
+  color: #ed174b;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(237, 23, 75, 0.35);
+  transition: text-decoration-color 0.15s ease;
+}
+.article-main .description a:hover {
+  text-decoration-color: #ed174b;
+}
+
+/* Code blocks. */
+.article-main pre {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+  margin: 8px 0;
+}
+
+/* Editorial "correction" device — a struck-through word with a handwritten
+   fix scrawled over it (e.g. "The Walk of Fame Shame"). Reusable anywhere in
+   article prose or a heading:
+
+     <span class="correction" aria-hidden="true"
+       ><span class="struck">Fame</span><span class="fix">Shame</span></span>
+
+   Put an aria-label with the intended reading on the containing element, and
+   aria-hidden on the span, so screen readers get clean text. Needs the
+   Permanent Marker font (linked in blog-post.html). */
+.article-main .correction {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.28em;
+  padding-top: 0.25em;
+}
+.article-main .correction .struck {
+  position: relative;
+  display: inline-block;
+  opacity: 0.3;
+}
+.article-main .correction .struck::before,
+.article-main .correction .struck::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: -0.08em;
+  top: 52%;
+  width: calc(100% + 0.16em);
+  height: 0.09em;
+  background: #ff2f65;
+  border-radius: 999px;
+}
+.article-main .correction .struck::before {
+  transform: rotate(5deg);
+}
+.article-main .correction .struck::after {
+  transform: rotate(-4deg);
+}
+.article-main .correction .fix {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 0.58em;
+  color: #ff2f65;
+  font-family: "Permanent Marker", cursive;
+  font-size: max(1.08em, 1.5rem);
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  transform: translateX(-50%) rotate(-6deg);
+  text-shadow: 0.04em 0.04em 0 #17191a, -0.025em 0 0 #17191a;
+}
+
+/* ---- Responsive: collapse the rail below the article ---- */
+@media (max-width: 1000px) {
+  .blog-article {
+    max-width: 820px;
+    margin-top: 40px;
+    padding: 0 24px;
+  }
+  .article-hero {
+    margin-bottom: 36px;
+  }
+  .article-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .article-rail {
+    position: static;
+    top: auto;
+  }
+  .rail-toc {
+    display: none;
+  }
+  .rail-disclosure .disclosure-days {
+    font-size: 3rem;
+  }
+}
+
+/* ---- Dark-mode polish ---- */
+@media (prefers-color-scheme: dark) {
+  .article-main .description > img {
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  }
+  .article-main pre {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .toc-list a {
+    border-left-color: rgba(255, 255, 255, 0.15);
+  }
+}
