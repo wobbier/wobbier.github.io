@@ -4,7 +4,7 @@
 <head>
 	<title>Hello, World!</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-	<link rel="stylesheet" href="/css/style.css?v=1783944894665">
+	<link rel="stylesheet" href="/css/style.css?v=1784363779248">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -95,7 +95,11 @@
 			]
 		}
 	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+	<!-- Powers the handwritten ".correction .fix" device (see style.css) -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
 </head>
 
 <body>
@@ -120,39 +124,43 @@
 			</div>
 		</nav>
 	</header>
-	<div class="content content-page">
-		<div class="padded-wrapper">
-			<div class="game-title">
-				<h1>Hello, World!</h1>
-				<h2>July 13th, 2026</h2>
-				<div class="clearfix"></div>
-			</div>
-			<hr />
-			<div class="blog-tags">
-				<span class="blog-tag">meta</span>
-				<span class="blog-tag">web</span>
-				<span class="blog-tag">node.js</span>
+	<div class="content content-page blog-article">
+
+		<div class="article-hero">
+			<div class="article-kicker">July 13th, 2026</div>
+			<h1 class="article-title">Hello, World!</h1>
+			<div class="article-tags">
+				<span class="blog-tag">meta</span><span class="blog-tag">web</span><span class="blog-tag">node.js</span>
 			</div>
 		</div>
 
-		<div class="description">
-			<div class="padded-wrapper">
-				Welcome to the blog! This is where I'll write about game development, engine programming, and whatever else I'm tinkering with.
-			</div>
+		<div class="article-grid">
+			<aside class="article-rail">
+				<nav class="rail-toc" aria-label="On this page">
+					<p class="rail-heading">On this page</p>
+					<ul class="toc-list"></ul>
+				</nav>
+			</aside>
 
-			<div class="padded-wrapper">
-				<div class="section-title">
-					<h1>How This Site Works</h1>
-					<div class="clearfix"></div>
-					<hr />
-				</div>
-				This site is a static build powered by <a href="https://metalsmith.io/">Metalsmith</a> and Node.js. Every page starts as a markdown file with
-				some front matter and gets rendered through a Handlebars layout. Adding a new post is just dropping a file into <span
-					class="accent">src/blog</span>:
-			</div>
+			<main class="article-main">
+				<div class="description">
+					<div class="padded-wrapper">
+						Welcome to the blog! This is where I'll write about game development, engine programming, and whatever else I'm tinkering with.
+					</div>
 
-			<div class="padded-wrapper">
-				<pre><code class="language-markdown">---
+					<div class="padded-wrapper">
+						<div class="section-title">
+							<h1>How This Site Works</h1>
+							<div class="clearfix"></div>
+							<hr />
+						</div>
+						This site is a static build powered by <a href="https://metalsmith.io/">Metalsmith</a> and Node.js. Every page starts as a markdown file
+						with some front matter and gets rendered through a Handlebars layout. Adding a new post is just dropping a file into <span
+							class="accent">src/blog</span>:
+					</div>
+
+					<div class="padded-wrapper">
+						<pre><code class="language-markdown">---
 layout: blog-post.html
 title: "My New Post"
 date: July 13th, 2026
@@ -160,8 +168,10 @@ slug: "my-new-post"
 ---
 Post content goes here.
 </code></pre>
-			</div>
+					</div>
 
+				</div>
+			</main>
 		</div>
 	</div>
 	<footer>
@@ -169,6 +179,7 @@ Post content goes here.
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+	<script src="/js/toc.js?v=1784363779248"></script>
 </body>
 
 </html>
